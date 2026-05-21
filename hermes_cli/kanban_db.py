@@ -5392,6 +5392,7 @@ def _default_spawn(
         cmd.extend(["-m", task.model_override])
     cmd.extend([
         "chat",
+        "--source", "tool",
         "-q", prompt,
     ])
     # Redirect output to a per-task log under <board-root>/logs/.
